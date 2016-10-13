@@ -1,0 +1,416 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial -scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title> Yorlynn Engmann </title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	</head>
+	<body>
+	<STYLE>
+	.carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+      max-height: 25%
+  }
+	div.Bar {
+    height: 200px;
+    width: 2000px;
+    background-color: black;
+}
+	.navbar {
+  text-align:center;
+}
+.navbar-nav {
+    display:inline-block;
+    float:none;
+}
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  background-color: transparent;
+  color: #FFF;
+  /*padding: 1em 0;*/
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,-100%,0);
+  transform: translate3d(0,-100%,0);
+}
+
+.hovereffect a, hovereffect p {
+  color: #FFF;
+  /*padding: 1em 0;*/
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+}
+
+.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+div.Quotes {
+    height: 150px;
+    width: 2000px;
+    background-color: RGB(169, 169, 169);}
+div.Recent {
+    height: 300px;
+    width: 2000px;
+    background-color: black;
+}
+.image { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+h1 { 
+   position: absolute; 
+   top: 400px; 
+   right: : 300; 
+   width: 100%; 
+}
+
+	</STYLE>
+		<!--javascript-->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/respond.js"></script>
+
+		<!--Sideshow
+		 1. me and camera w/my name
+		 2 video of stuff
+		 <div class="Recent">
+   <!--<div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators 
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      
+    </ol>
+
+    <!-- Wrapper for slides 
+    <div class="carousel-inner" role="listbox">-->
+
+      <!--<div class="item active">-->
+        <div class="image"> 
+        <img src="Images/Slideshow01.jpg" style="width: 100%; height: 30%">
+        <font color="white"><h1 class="bounce"><center style="line-height: 50px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 9px; font-weight: 400; font-size: 124px;">YORLYNN ENGMANN </center></font><br><br><br><center style="line-height: 50px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 9px; font-weight: 400; font-size: 50px;"><font color="black"> Artist Extraodiare </h1></center>
+        </h1></font></div>
+        <!--<div class="carousel-caption">
+        
+        </div>
+      </div>S
+<!--
+      <div class="item">
+        <img src="Images/Image4.jpg" alt="Chania" width="100%" height="445">
+        <div class="carousel-caption">
+        
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="Images/Slideshow2.jpg" alt="Flower" width="100%" height="445">
+        <div class="carousel-caption">
+          
+        </div>
+      </div>
+
+</div></div></div>
+</div>
+		<!--navbar-->
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      
+    </div>
+    <ul class="nav navbar-nav">
+      
+      <li><a href="#about">ABOUT</a></li>
+
+      <li><a href="2">PORTFOLIO</a></li>
+      <li><a href="#Resume">RESUME</a></li>
+      <li><a href="#orgs">ORGANIZATIONS</a></li>
+      <li><a href="#Contact">CONTACT</a></li>
+    </ul>
+  </div>
+</nav>
+<p> 
+<!--ABOUT ME-->
+<br><br>
+<font face="Berlin Sans FB" color="1E90FF" size=4>
+<center>ENGINEER, PHOTOGRAPHER & DEVELOPER </font>
+<br><h3 id=about>I truely believe I am a connoisseur of both art and science. I enjoy exploring where science and art meet.<br> Where human interaction begins and raw data ends.
+<br><small>My name is Yorlynn Engmann. I am an aspiring photgrapher and developer while I am studying at the University of Texas at Dallas, <br> I aspires to become a Chemical Engineer,  in energy development.
+ </small></h3></center>
+ <!--add some to about make bigger or prettier-->
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="Quotes"><br><p><center><font color=1e90ff size=6>"</font><font color="white" size="5">I do not seek, I find</font><font color="1E90FF" size="6">"</font></center><p align="center"><font color="white" size="5">-Pablo Picasso</font>
+</div>
+
+<table>
+	<tr>
+</table>
+ <!--PORTFOLIO-->
+<div class="Bar"><br><br><br><font face="Berlin Sans FB" color="1E90FF" size=4 id="Resume">
+<center> RECENT WORK </font><br>
+<font color="white" size="5"><b>Photography Portfolio</b></font>
+</div>
+<h2><center>
+<small><font color="black"> Here are just a few examples of my recent work. My photograpghy ranges from potraits ot landcapes of a variety of things.
+                    I try not to limit myself and my work and see the beauty in everything and everyone I meet.<br>
+                    If you'd like to see more of my photograpghy work, or work with me in the future. <br><br></font></small></h2></center>
+                    <br>
+  <div class="container">
+
+        <div class="row"> 
+                        
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+        <img class="img-responsive" src="http://imgur.com/SMecoce" alt="">
+            <div class="overlay">
+            
+            </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+    <div class="hovereffect">
+        <img class="img-responsive" src="http://imgur.com/tPhxZ6h" alt="">
+            <div class="overlay">
+               
+				
+            </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+        <img class="img-responsive" src="http://imgur.com/e099p3u" alt="">
+            <div class="overlay">
+                
+            </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+        <img class="img-responsive" src="http://imgur.com/L3NWzgu" alt="">
+            <div class="overlay">
+               
+            </div>
+    </div>
+</div>
+</div>
+  <div class="row">
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+        <img class="img-responsive" src="http://imgur.com/39WU6nJ" alt="">
+            <div class="overlay">
+            
+            </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+        <img class="img-responsive" src="http://imgur.com/12shtEP" alt="">
+            <div class="overlay">
+               
+            </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+        <img class="img-responsive" src="http://imgur.com/tULJ2kR" alt="">
+            <div class="overlay">
+                
+            </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+        <img class="img-responsive" src="http://imgur.com/MpeHEV3" alt="">
+            <div class="overlay">
+              
+            </div>
+    </div>
+</div>
+</div>
+ 
+</div>
+<br>
+<center> To see more please visit my facebook page <a target="_blank" href="https://www.facebook.com/search/top/?q=yorlynn%20engmann%20photography"> Yorlynn Engmann Photography</a> </small></h2></center></div></center></font></p></p>
+<br>
+
+<div class="Bar"><br><br><br><font face="Berlin Sans FB" color="1E90FF" size=4 id="Resume">
+<center> EXPERIENCES </font><br>
+<font color="white" size="5"><b> Knowledge & Skills</b></font>
+</div>
+<br>
+<br>
+     <!--Resume/Accomplishments-->
+     
+<div class=container></div>
+         <div class="row">
+  <div class="col-xs-6"><h4 align="right">Research Fellow<small><br> Summer 2016</small></h4>
+ <font  color="grey" size=2>
+                <p align="right">
+                This year I had the opputunity to work with Dr. Anvar
+                            Zakhidov and Photovoltaic cell development. <br>
+                            Independently developed research on inorganic organic 
+                            hybrid material perovskite in Moscow at "NUST MISiS".</font>
+                        <p ALIGN="right"><font color="black"><a href="http://misis.ru/university/news/science/2016-07/4147/">ARTICILE </a></p></font>
+                        <p align=right><font color="black"><a href="http://www.vesti.ru/videos/show/vid/683565/cid/2281/">RUSSIANTV BROADCAST</a></p></dt></font></p></div>
+
+
+  <div class="col-xs-6"><h4 align="left">Logistics Director<small> <br> HackUTD 2016</small></h4>
+  <p align="left"><font  color="grey" size=2> During the duration of the 2015-2016 school year. I worked as Logistic Director of HackUTD a MLH <br>
+  sponsored Hackathon. Our small team of 10 individuals put on UTD's first out of state Hackathon
+                            with <br> roughly 400 participants!</p></font>
+                        <p align="left"><font color="black"><a href="">COVERAGE</a></center></p></font>
+  </div></div>
+ 
+<div class="row">
+
+  <div class="col-xs-6"><h4 align="right"> Research Fellow<small><br> Fall 2014 </small></h4>
+<p align="right">
+<font  color="grey" size=2>
+ At the University of Pittsburgh, I conducted research under 
+                            the University's Biological Department <br> to understand the behavior 
+                            mycobacteria phages. I learned several research techniques <br> such as electrophoresis, plating, and electron microscopy.
+                            <br>
+</font><p align="right"><font color="black"><a href="http://kxan.com/2015/09/27/university-of-texas-hosts-fourth-annual-hacktx/">COVERAGE</a></p></div></font>
+  <div class="col-xs-6"> <h4 align="left">The C.O.R.E <small><br> Facillitator 2016</small></h4>
+ <p align="left"><font  color="grey" size=2>
+ 					This is a center for children 6-17 to learn, enjoy and appreaciate STEM. <br>
+ 					Here I teach classes on a variety of classes from circuitry to the water cycle.</font><br>
+<p align="LEFT"><font color="black"><a href="https://thecorerockwall.com/">WEBSITE</a></p></div></font>
+
+
+                           </font>
+                        </p></div></h4></div>
+</div>
+</div><font color="1E90FF">
+<p align="center"> <a href="http://www.slideshare.net/YorlynnEngmann/resume-66923371"> TO SEE FULL RESUME </a></p>
+</font>
+<br>
+
+
+<!--oorgs
+<div class="Bar"><br><br><br><font face="Berlin Sans FB" color="1E90FF" size=4 id="Resume">
+<center> ORGANIZATIONS </font><br>
+<font color="white" size="5"><b>Community Outreach</b></font>
+</div>
+
+<div class="container">
+
+        <div class="row">                   
+<div class="col-md-4">
+    <div class="hovereffect">
+        <img class="img-responsive" src="Images/Image1.jpg" alt="">
+            <div class="overlay">
+            <br><br><a href="http://acmutd.co/">ACM</a>S
+            </div>
+    </div>
+</div>
+
+</div></div></center></font></div></p>
+
+<br>
+<!--footer-->
+ <!--footer? or maybe in navagation bar not sure yet-->
+        <footer id="Contact" class="w3-container w3-padding-64 w3-light-grey w3-center w3-margin-top w3-opacity">
+            <div class="w3-xlarge w3-padding-32">
+                <a href="http://www.facebook.com/yorlynn" class="w3-hover-text-indigo"><i class="fa fa-facebook-official"></i></a>
+                <a href="http://www.pinterest.com/yorlynn" class="w3-hover-text-red"><i class="fa fa-pinterest-p"></i></a>
+                <a href="http://www.twitter.com" class="w3-hover-text-light-blue"><i class="fa fa-twitter"></i></a>
+                <a href="http://www.flickr.com" class="w3-hover-text-grey"><i class="fa fa-flickr"></i></a>
+                <a href="http://www.linkedin.com/in/yorlynn-engmann-a2b749115" class="w3-hover-text-indigo"><i class="fa fa-linkedin"></i></a>
+            </div>
+            </footer>
+	</body>
+	
+	<script type="text/javascript">
+var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) { myIndex = 1 }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 3000); // Change image every 3 seconds
+            }
+</script>
+</html>
